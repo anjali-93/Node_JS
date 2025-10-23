@@ -26,5 +26,9 @@ const fs = require ("fs");
 // fs.copyFileSync("test.txt", "copy.txt");
 
 // delete a file
-fs.unlinkSync("copy.txt");
+// fs.unlinkSync("copy.txt");
+
+// calculate number of CPU cores
+const os = require("os");
+console.log(os.cpus().length);
 
