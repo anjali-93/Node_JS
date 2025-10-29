@@ -1,0 +1,3 @@
+Step1 : npm init ----> package.json file created
+Step2 : npm install dayjs ------> install the dependencies for date 
+Step3 : npm install ulr -------->install the dependencies for the URL

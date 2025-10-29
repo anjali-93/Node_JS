@@ -1,3 +1,32 @@
 Request received on /blog at 2025-10-27 16:11:13
 Request received on /about?myname=anjali at 2025-10-27 16:13:29
 Request received on /about?myname=johncena at 2025-10-27 16:14:19
+Request received on / and Request Method is GET at 2025-10-29 15:41:55
+Request received on /favicon.ico and Request Method is GET at 2025-10-29 15:41:56
+Request received on /signup and Request Method is GET at 2025-10-29 15:47:54
+Request received on / and Request Method is GET at 2025-10-29 15:51:04
+Request received on /favicon.ico and Request Method is GET at 2025-10-29 15:51:05
+Request received on /signup and Request Method is GET at 2025-10-29 15:51:10
+Request received on /about and Request Method is GET at 2025-10-29 15:54:33
+Request received on /favicon.ico and Request Method is GET at 2025-10-29 15:54:33
+Request received on /about/myname=anjali and Request Method is GET at 2025-10-29 15:54:42
+Request received on /favicon.ico and Request Method is GET at 2025-10-29 15:54:42
+Request received on /about and Request Method is GET at 2025-10-29 15:54:54
+Request received on /favicon.ico and Request Method is GET at 2025-10-29 15:54:55
+Request received on /signup and Request Method is GET at 2025-10-29 15:55:03
+Request received on /signup at 2025-10-29 15:56:53
+Request received on /favicon.ico at 2025-10-29 15:56:53
+Request received on /about at 2025-10-29 15:56:58
+Request received on /favicon.ico at 2025-10-29 15:56:58
+Request received on /about/myname=anjali at 2025-10-29 15:57:08
+Request received on /favicon.ico at 2025-10-29 15:57:08
+Request received on /about/mynameisanjali at 2025-10-29 15:57:32
+Request received on /favicon.ico at 2025-10-29 15:57:32
+Request received on /about/myname+anjali at 2025-10-29 15:57:40
+Request received on /favicon.ico at 2025-10-29 15:57:40
+Request received on /about/mynameanjali at 2025-10-29 15:57:48
+Request received on /favicon.ico at 2025-10-29 15:57:49
+Request received on /about/myname=anjali at 2025-10-29 16:00:02
+Request received on /favicon.ico at 2025-10-29 16:00:02
+Request received on /about?myname=anjali at 2025-10-29 16:00:13
+Request received on /favicon.ico at 2025-10-29 16:00:13
