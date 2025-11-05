@@ -1,0 +1,52 @@
+const express = require("express");
+const users = require("./MOCK_DATA.json");
+const fs = require("fs");
+
+const app = express();
+const PORT = 8000;
+
+
+// Middleware 
+app.use (express.urlencoded({extended: false}));
+
+app.use((req, res, next) =>{
+    console.log("Hello from Middleware 1");
+    next(); // to pass the control to the next middleware
+});
+app.use((req, res, next) =>{
+    console.log("Hello from Middleware 2");
+    return res.end("Helllo"); // ends the request-response cycle 
+});
+
+
+// JSON Response
+
+// List all users:
+app.get("/api/users" , (req, res) =>{
+    return res.json(users);
+});
+
+// Get a single user by ID, update a user, delete a user
+app
+   .route("/api/users/:id")
+   .get( (req, res) => {
+    const id = Number(req.params.id);
+    const user = users.find ((user) => user.id === id);
+    return res.json (user);
+})
+.patch( (req, res) => {})
+.delete( (req, res) => {});
+
+app.post("/api/users" , (req, res) => {
+    const body = req.body;
+    users.push({...body, id: users.length+1});
+    fs.writeFile("./MOCK_DATA.json" , JSON.stringify(users), (err , data) =>{
+        return res.json({status: "success" , id: users.length});
+    });
+    
+});
+
+
+app.listen(PORT, () => {
+     console.log(`Server is running on ${PORT}`);
+    });
